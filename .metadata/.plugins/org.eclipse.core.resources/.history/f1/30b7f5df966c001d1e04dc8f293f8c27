@@ -1,0 +1,38 @@
+package com.boot.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+
+
+public class StudentEntity {
+	@Id
+	@Generatedvalue(strategy=GenerationType.AUTO)
+	private int StudentId;
+	
+	@Column(nullable=false)
+	private String StudentName;
+	
+	@Column(nullable=false)
+	private String StudentEmail;
+	
+	@Column(nullable=false)
+	private int StudentAge;
+	
+	@Column(nullable=false)
+	private String StudentPassword;
+
+	@Column(nullable=false)
+	private String StudentClass;
+
+    
+
+
+}

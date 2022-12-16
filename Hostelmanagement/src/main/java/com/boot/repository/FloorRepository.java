@@ -1,0 +1,13 @@
+package com.boot.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.boot.entity.FloorEntity;
+
+
+
+public interface FloorRepository extends JpaRepository<FloorEntity,Integer>{
+	
+	
+}
+

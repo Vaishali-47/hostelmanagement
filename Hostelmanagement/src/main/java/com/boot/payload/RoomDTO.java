@@ -1,0 +1,41 @@
+package com.boot.payload;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
+public class RoomDTO {
+	
+	private int roomId;
+	
+	private String roomType;
+	
+	private String roomFee;
+	
+	 private int roomCapacity;
+	 
+	 private boolean roomStatus;
+	 
+	 private int availableSeat;
+
+	 
+	// @JsonIgnore
+	  private FloorDTO floor;
+	
+	 
+	 @JsonIgnore
+	private List<AllocatedRoomDTO> allocatedroomList=new ArrayList<>();
+	
+	
+}
+

@@ -1,0 +1,5 @@
+package com.boot.payload;
+
+public class AllocatedRoomDTO {
+
+}
